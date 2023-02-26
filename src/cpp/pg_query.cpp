@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 int main(int argc, char **argv) {
-	printf("Argc: %d\n", argc);
 	if (argc < 2) {
 		printf("Usage: %s <query>");
 		return 1;

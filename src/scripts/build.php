@@ -16,7 +16,6 @@ class LibInstaller {
 		if (PHP_OS_FAMILY == 'Darwin') {
 			$cFlags = "-mmacosx-version-min=10.7";
 		}
-		print("Making...");
 		exec("make CFLAGS=$cFlags PG_CFLAGS=$cFlags build");
 
 		// Copy over output files
