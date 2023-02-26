@@ -1,0 +1,21 @@
+{
+    "name": "sanderronde/pg_query",
+    "description": "Wrapper around the postgres query parser",
+    "type": "library",
+    "autoload": {
+        "psr-0": {
+            "PgQuery\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sander Ronde",
+            "email": "awsdfgvhbjn@gmail.com"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "php src/scripts/build.php"
+        ]
+    }
+}
