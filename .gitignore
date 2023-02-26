@@ -2,3 +2,4 @@ vendor
 src/cpp/include/*.a
 src/cpp/include/*.h
 bin/pg_query
+libpg_query_git
