@@ -3,7 +3,7 @@
 
 int main(int argc, char **argv) {
 	if (argc < 2) {
-		printf("Usage: %s <query>");
+		printf("Usage: <query>");
 		return 1;
 	}
 	PgQueryParseResult result = pg_query_parse(argv[1]);
