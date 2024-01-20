@@ -29,6 +29,7 @@ class LibInstaller {
 		
 		// Build raw query now
 		chdir("../src/cpp");
+		exec("mkdir -p ../../bin");
 		exec("make php_pg_query");
 
 		// Check if file exists
@@ -36,6 +37,7 @@ class LibInstaller {
 			throw new Exception("Failed to build pg_query");
 		}
 		chmod("../../bin/pg_query", 0755);
+		print("Done!\n");
 	}
 }
 
